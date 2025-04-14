@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">SeNa</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i data-feather="menu"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html" class="active">项目</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="projects-header">
+            <h1>项目展示</h1>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">Web开发</button>
+                <button class="filter-btn" data-filter="mobile">移动端</button>
+                <button class="filter-btn" data-filter="backend">后端</button>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- 项目1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="电商后台管理系统界面">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="访问网站">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="查看代码">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>电商平台后台管理系统</h3>
+                    <p>基于Vue3和TypeScript开发的现代化后台管理系统，包含商品管理、订单处理、用户管理等功能。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue3</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Element Plus</span>
+                        <span class="tech-tag">Vite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目2 -->
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1539437829697-1b4ed5aebd19?auto=format&fit=crop&w=600&q=80" alt="健康管理App界面">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="访问网站">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="查看代码">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>健康管理App</h3>
+                    <p>使用React Native开发的跨平台移动应用，提供运动追踪、饮食记录和健康数据分析功能。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目3 -->
+            <div class="project-card" data-category="backend">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="微服务架构系统">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="访问网站">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="查看代码">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>微服务架构系统</h3>
+                    <p>基于Spring Cloud的微服务架构系统，实现了服务注册、配置中心、负载均衡等功能。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spring Cloud</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目4 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1600267185393-e158a98703de?auto=format&fit=crop&w=600&q=80" alt="在线协作平台界面">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="访问网站">
+                                <i data-feather="external-link"></i>
+                            </a>
+                            <a href="#" class="project-link" aria-label="查看代码">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>在线协作平台</h3>
+                    <p>基于React和Socket.io开发的实时协作平台，支持多人同时编辑文档和实时通讯。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p><i data-feather="mail"></i> email@example.com</p>
+                <p><i data-feather="map-pin"></i> 中国，深圳</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="resume.html">简历</a></li>
+                    <li><a href="projects.html">项目</a></li>
+                    <li><a href="github.html">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>技术博客</h3>
+                <ul>
+                    <li><a href="#">Medium</a></li>
+                    <li><a href="#">Dev.to</a></li>
+                    <li><a href="#">掘金</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 个人作品集. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化Feather图标
+        feather.replace();
+
+        // 移动端菜单切换
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // 项目筛选功能
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 移除所有按钮的active类
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // 添加当前按钮的active类
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+                
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

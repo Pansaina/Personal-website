@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 活动 - 个人网站</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="github.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">Sena</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">简历</a></li>
+                <li><a href="projects.html">项目</a></li>
+                <li><a href="github.html" class="active">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="github-page">
+        <div class="github-header">
+            <h1>GitHub 活动</h1>
+            <p>我的开源贡献和代码统计</p>
+        </div>
+
+        <div class="github-profile">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="" alt="GitHub头像" id="github-avatar" class="avatar">
+                    <div class="profile-info">
+                        <h2 id="github-name">加载中...</h2>
+                        <p id="github-bio">加载中...</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span id="followers">0</span> 关注者
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span id="repos">0</span> 仓库
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span id="stars">0</span> 星标
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="github-link" class="github-button" target="_blank">
+                    <i class="fab fa-github"></i> 访问 GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="contribution-section">
+            <h2>贡献活动</h2>
+            <div class="contribution-graph">
+                <!-- GitHub贡献图表将通过JavaScript动态加载 -->
+                <div id="contribution-calendar"></div>
+            </div>
+        </div>
+
+        <div class="repos-section">
+            <h2>热门仓库</h2>
+            <div class="repos-grid" id="repos-container">
+                <!-- 仓库卡片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+
+        <div class="languages-section">
+            <h2>编程语言统计</h2>
+            <div class="languages-chart">
+                <canvas id="languages-chart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p><i class="fas fa-envelope"></i> Email: qq17324710859@gmail.com</p>
+                <p><i class="fab fa-github"></i> GitHub: @Pansaina</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="resume.html">简历</a></li>
+                    <li><a href="projects.html">项目</a></li>
+                    <li><a href="github.html">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>技术博客</h3>
+                <ul>
+                    <li><a href="#">最新文章</a></li>
+                    <li><a href="#">技术分享</a></li>
+                    <li><a href="#">学习笔记</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 个人网站. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 确保按正确的顺序加载脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="github.js?v=1"></script>
+</body>
+</html> 
